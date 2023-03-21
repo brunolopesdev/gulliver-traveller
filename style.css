@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    background-image: url(./assets/images/snowy.jpg);
+    background-size: cover;
+}
+
+.gulliver__main {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+    background-color: #e5e4e4e9;
+    padding: 2rem;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.gulliver__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.hamburger {
+    content: url('https://api.iconify.design/ci/hamburger-md.svg?color=white&width=44&height=44');
+    cursor: pointer;
+}
+
+.gulliver__header .gulliver__header__logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gulliver__header .gulliver__header__logo p::before {
+    content: url('https://api.iconify.design/lucide/tree-pine.svg?color=white&width=24&height=24');
+}
+
+.gulliver__nav {
+    display: flex;
+    gap: 40px;
+}
+
+.gulliver__nav--menu {
+    margin: 0 auto;
+    background-color: #ffffff54;
+    padding: 0 2rem;
+    height: 50px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.gulliver__nav--menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.gulliver__nav--menu ul li {
+    list-style: none;
+}
+
+.gulliver__nav--menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.search__input {
+    border: 2px solid #000;
+    border-radius: 8px;
+    width: 500px;
+    background-color: transparent;
+    color: #000;
+    font-size: 20px;
+    outline: none;
+}
+
+.gulliver__search {
+    position: relative;
+}
+
+.gulliver__search::after {
+    content: url('https://api.iconify.design/material-symbols/search.svg?color=black&width=34&height=34');
+    position: absolute;
+    left: 450px;
+}
+
+.search__input {
+    content: url('https://api.iconify.design/material-symbols/search.svg?color=black&width=44&height=44');
+}
+
+.search__input::placeholder {
+    color: #000;
+    padding-left: 15px;
+}
+
+.gulliver__banner--content h1 {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+
+.gradient {
+    text-decoration: underline;
+}
+
+.gulliver__banner--content p {
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+}
+
+.gulliver__hotels {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+    color: #000;
+}
+
+.gulliver__hotels .gulliver__hotels--cards {
+    display: flex;
+    gap: 30px;
+}
+
+.gulliver__hotels--card {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.gulliver__hotels--card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.gulliver__hotels--card .card--info {
+    padding: 0 0.5rem;
+}
+
+.gulliver__hotels .gulliver__hotels--cards img {
+    width: 250px;
+}
+
+.gulliver__hotels .gulliver__hotels--cards a {
+    text-decoration: underline;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gulliver__places {
+    padding-top: 50px;
+}
+
+.gulliver__places img {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.places--img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gulliver__places .places--img::after {
+    content: url('https://api.iconify.design/material-symbols/arrow-back-ios-rounded.svg?color=black&width=64&height=64&rotate=180deg');
+    cursor: pointer;
+}
+
+.gulliver__places .places--img::before {
+    content: url('https://api.iconify.design/material-symbols/arrow-back-ios-rounded.svg?color=black&width=64&height=64');
+    cursor: pointer;
+}
+
+.gulliver__places h2 {
+    text-align: center;
+}
